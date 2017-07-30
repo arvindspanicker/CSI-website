@@ -1,0 +1,242 @@
+/*header css */
+.branding{
+	font-size: 17px;
+	text-transform: uppercase;
+}
+/*csi logo in header */
+.csi{
+	color: #e8491d;
+	font-weight: bold; 
+	font-size: 20px;
+}
+a{
+	text-decoration: none;
+}
+/* header background color */
+.w3-theme {
+	color:#fff !important; background-color:#35424a !important
+}
+.w3-theme-l1 {
+	color:#fff !important; background-color:#556a77 !important
+}
+
+body{
+	background-color: #cccccc;
+}
+.hom{
+	background-color: white;
+}
+/*section */
+.section{
+	padding: 0;
+}
+.section h2{
+	margin:0;
+	padding:0;
+}
+.section .fa{
+	font-size: 50px;
+	padding-top: 1%;
+}
+/*section ends */
+
+/*About Section 
+#aboutsection{
+	 background: url("../img/3.jpg") no-repeat;
+	 background-size: cover;
+} */
+
+
+/*navbar icon */
+.navbaricon{
+	padding: 10px;
+	font-size:20px;
+}
+
+/*contact */
+.contacticon{
+	font-size: 40px;
+}
+.cleft{
+	float: left;
+	font-size: 15px;
+}
+.cright{
+	float: right;
+	font-size: 15px;
+}
+/*contact ends here */
+
+/*image gallery */
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+.topsection{
+	margin-top: 55px;
+	padding: 15px;
+}
+.gall{
+	margin-top:1%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 1%;
+}
+.style_prevu_kit
+{
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .topsection{
+		font-size: 10px;
+		width: 100%;
+		padding: 0;
+		margin-top: 55px;
+	}
+
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .topsection{
+		font-size: 10px;
+		width: 100%;
+		padding: 0;
+		margin-top: 140px;
+	}
+
+}
+/*image gallery ends here */
+
+/*slider */
+#newslider{
+	width: 600px;
+	height:400px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	padding: 3px;
+}
+#newslider img{
+	width:600px;
+	 height:400px;
+}
+.slide{
+	position: absolute;
+}
+.slide-copy{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	color: white;
+}
+#prev, #next{
+	float: left;
+	margin-top: 130px;
+	cursor: pointer;
+	position: relative;
+	z-index: 100;
+}
+.mySlides {
+	display:none;
+}
+.w3-left, .w3-right, .w3-badge {
+	cursor:pointer;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+
+.btn{
+	margin-left: 45%;
+}
+.w3-badge {
+	height:13px;
+	width:13px;
+	padding:0;
+}
+/*slider ends here */
+
+.imgpad{
+	padding:10px;
+}
+@media only screen and (max-width: 600px)
+{
+	.cleft{
+		font-size: 11px;
+	}
+	.cright
+	{
+		font-size: 11px;
+	}
+	
+	.w3-badge{
+		height: 10px;
+		width: 10px;
+		padding:0;
+	}
+	.btn{
+		margin-left: 45%;
+	}
+	.imgpad{
+		padding: 5px;
+	}
+	.responsive{
+		margin-left:50px;
+		width: 75%;
+	}
+	.gall{
+		margin-bottom: 12%;
+	}
+	.topsection{
+		font-size: 10px;
+		width: 100%;
+		padding: 0;
+		margin-top: 140px;
+	}
+}
