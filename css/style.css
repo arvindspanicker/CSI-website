@@ -24,6 +24,7 @@ body{
 	background-color: #cccccc;
 }
 .hom{
+	padding: 0;
 	background-color: white;
 }
 /*section */
@@ -40,12 +41,9 @@ body{
 }
 /*section ends */
 
-/*About Section 
-#aboutsection{
-	 background: url("../img/3.jpg") no-repeat;
-	 background-size: cover;
-} */
-
+.topsection{
+	padding-top: 90px;
+}
 
 /*navbar icon */
 .navbaricon{
@@ -68,6 +66,17 @@ body{
 /*contact ends here */
 
 /*image gallery */
+.gall{
+	padding-top: 10px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
 div.gallery img {
     width: 100%;
     height: auto;
@@ -77,55 +86,16 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
+
 .responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
 }
-.topsection{
-	margin-top: 55px;
-	padding: 15px;
-}
-.gall{
-	margin-top:1%;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 1%;
-}
-.style_prevu_kit
-{
-    display:inline-block;
-    border:0;
-    position: relative;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1); 
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1); 
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1);   
-
-}
-.style_prevu_kit:hover
-{
-    box-shadow: 0px 0px 150px #000000;
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 200ms ease-in;
-    transform: scale(1.5);
-}
 @media only screen and (max-width: 700px){
     .responsive {
         width: 49.99999%;
         margin: 6px 0;
-        padding-left: 10px;
-        padding-right: 10px;
     }
     .topsection{
 		font-size: 10px;
@@ -137,10 +107,8 @@ div.desc {
 }
 
 @media only screen and (max-width: 500px){
-    .responsive {
+	.responsive {
         width: 100%;
-        padding-right: 10px;
-        padding-left: 10px;
     }
     .topsection{
 		font-size: 10px;
@@ -148,7 +116,11 @@ div.desc {
 		padding: 0;
 		margin-top: 140px;
 	}
-
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 /*image gallery ends here */
 
@@ -208,11 +180,11 @@ div.desc {
 @media only screen and (max-width: 600px)
 {
 	.cleft{
-		font-size: 11px;
+		font-size: 10px;
 	}
 	.cright
 	{
-		font-size: 11px;
+		font-size: 10px;
 	}
 	
 	.w3-badge{
@@ -226,17 +198,18 @@ div.desc {
 	.imgpad{
 		padding: 5px;
 	}
-	.responsive{
-		margin-left:50px;
-		width: 75%;
-	}
-	.gall{
-		margin-bottom: 12%;
-	}
 	.topsection{
 		font-size: 10px;
 		width: 100%;
 		padding: 0;
 		margin-top: 140px;
+	}
+	
+	.hom p{
+		font-size: 10px;
+	}
+	.hom h2{
+		font-size: 12px;
+		font-weight: bolder;
 	}
 }
